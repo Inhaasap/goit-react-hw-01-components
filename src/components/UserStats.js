@@ -31,7 +31,6 @@ export const UserStats = ({ id, label, percentage }) => {
   );
 };
 
-
 UserStats.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
