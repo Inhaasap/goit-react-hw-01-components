@@ -26,11 +26,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats} />
       
-      <UserStats
-        data={data.id}
-        label={data.label}
-        percentage={data.percentage}
-      />
+      <UserStats title="Upload stats" stats={data} />
 
     </div> 
   );  
