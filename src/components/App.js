@@ -1,8 +1,8 @@
-import { UserProfile } from './UserProfile';
-import user from '../user.json';
+import { UserProfile } from './UserProfile/UserProfile';
+import user from './UserProfile/user.json';
 
-import { UserStats } from './UserStats';
-import data from '../data.json';
+import { UserStats } from './UserStats/UserStats';
+import data from './UserStats/data.json';
 
 
 
