@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types' ;
 
 // Styles
-import css from './UserStats.css';
+import css from './UserStats.module.css';
 
 export const UserStats = ({ title, stats }) => {
   return (

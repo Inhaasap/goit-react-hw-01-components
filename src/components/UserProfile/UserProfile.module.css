@@ -2,32 +2,34 @@
   margin: 50px;
   border: 1px solid rgb(227, 227, 227);
   border-radius: 10px;
-  box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+  box-shadow: 0 5px 7px -1px rgba(14, 163, 217, 0.23);
+  width: 50%;
 }
 
 .description {
-  text-align: center;
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
 }
 
 .avatar {
   width: 200px;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 .name {
+  font-weight: 700;
   font-size: 24px;
-  font-weight: 500;
-  margin: 16px;
 }
 
 .tag {
-  color: rgb(141, 141, 141);
+  color: rgb(157, 137, 137);
 }
 
 .location {
-  color: rgb(141, 141, 141);
+  color: rgb(157, 137, 137);
 }
 
 .stats {
@@ -37,14 +39,19 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #f3f6f9;
-  border-top: 1px solid rgb(227, 227, 227);
+  border-top: 1px solid rgb(48, 172, 164);
 }
 
 .item {
-  text-align: center;
+  flex: 1 1 auto;
   padding: 20px;
-  width: 100%;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #e4e4e4;
 }
 
 .item:not(:last-child) {
@@ -60,6 +67,6 @@
 
 .quantity {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   display: block;
 }
