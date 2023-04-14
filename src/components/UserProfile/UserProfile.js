@@ -7,9 +7,12 @@ import css from './UserProfile.module.css';
 export const UserProfile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className={css.profile}>
-      <div className={css.description}>
+      <div className={css.сard}>
+        <div className={css.description}>
+          <div className={css.thum}>
         <img src={avatar} alt={avatar} className={css.avatar} />
-        <p className={css.name}>{username}</p>
+          </div>
+          <p className={css.name}>{username}</p>
         <p className={css.tag}>{tag}</p>
         <p className={css.location}>{location}</p>
       </div>
@@ -27,7 +30,8 @@ export const UserProfile = ({ username, tag, location, avatar, stats }) => {
           <span className={css.label}>Likes</span>
           <span className={css.quantity}>{stats.likes}</span>
         </li>
-      </ul>
+        </ul>
+        </div>
     </div>
   );
 };

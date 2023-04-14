@@ -7,18 +7,22 @@ import { UserStats } from './UserStats/UserStats';
 import data from './UserStats/data.json';
 
 // Friends
+import { FriendList } from './UserFriends/FriendList';
+import friends from './UserFriends/friends.json';
+
 // Transactions
+import { UserTransactions } from './UserTransactions/UserTransactions';
+import transactions from './UserTransactions/transactions.json';
 
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
-        // display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
         color: '#010101',
+        backgroundColor: 'lightgray',
       }}
     >
       <UserProfile
@@ -30,6 +34,10 @@ export const App = () => {
       />
 
       <UserStats title="Upload stats" stats={data} />
+
+      <FriendList friends={friends} />
+
+      <UserTransactions transactions={transactions} />
     </div>
   );
 };

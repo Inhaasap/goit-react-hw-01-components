@@ -6,6 +6,7 @@ import css from './UserStats.module.css';
 
 export const UserStats = ({ title, stats }) => {
   return (
+    <div className={css.container}>
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.statlist}>
@@ -21,7 +22,8 @@ export const UserStats = ({ title, stats }) => {
           );
         })}
       </ul>
-    </section>
+      </section>
+      </div>
   );
 };
 
