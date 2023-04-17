@@ -16,15 +16,7 @@ import transactions from './UserTransactions/transactions.json';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        justifyContent: 'center',
-        alignItems: 'center',
-        color: '#010101',
-        backgroundColor: 'lightgray',
-      }}
-    >
+    <div>
       <UserProfile
         username={user.username}
         tag={user.tag}
